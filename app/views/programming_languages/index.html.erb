@@ -1,0 +1,21 @@
+<div class="container mt-5">
+  <p class="text-success"><%= notice %></p>
+
+  <h1 class="mb-4 text-center">Programming Languages</h1>
+
+  <div id="programming_languages" class="row">
+    <% @programming_languages.each do |programming_language| %>
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <%= render partial: 'programming_language', locals: { programming_language: programming_language } %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="text-center mb-5">
+    <%= link_to "New programming language", new_programming_language_path, class: "btn btn-success" %>
+  </div>
+</div>

@@ -1,24 +1,10 @@
-# README
+# CodeIndex
+A basic CRUD application to manage a list of programming languages. Built using Ruby on Rails with the help of ChatGPT.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
+1. Run `bundle install` to install dependencies.
+2. Run `rails db:seed` to seed databse.
+3. Run `rails server` to start the server.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Preview
+!["Screenshot of Index Page"]()

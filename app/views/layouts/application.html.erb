@@ -8,9 +8,29 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <link rel="icon" href="<%= asset_path 'favicon.ico' %>" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
 
   <body>
-    <%= yield %>
+    <header class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <h1 class="mb-0">
+          <i class="fas fa-code"></i>
+          <%= link_to "CodeIndex", programming_languages_path, class: "link-black" %>
+        </h1>    
+      </div>
+    </header>
+    <div class="container mt-5">
+      <%= yield %>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
