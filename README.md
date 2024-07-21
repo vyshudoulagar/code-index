@@ -7,4 +7,4 @@ A basic CRUD application to manage a list of programming languages. Built using 
 3. Run `rails server` to start the server.
 
 ## Preview
-!["Screenshot of Index Page"]()
+!["Screenshot of Index Page"](https://github.com/vyshudoulagar/code-index/blob/main/app/assets/images/codeindex.png)
